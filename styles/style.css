@@ -89,6 +89,7 @@ body {
   display: flex;
   perspective: 1200px;
 }
+
 .book__page {
   position: relative;
   width: 50%;

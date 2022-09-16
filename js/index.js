@@ -25,5 +25,14 @@ function unLock() {
         document.getElementById('white').classList.remove('whiteRemover');
         document.getElementById('white').classList.add('whiteUncover');
     }, 2000);
-
 };
+
+function disappear() {
+    let audio = new Audio('../sound/ff6-ost.mp3');
+    audio.play();
+
+    document.getElementById('welcome').classList.add('welcomeDisappear');
+    setTimeout(() => {
+        document.body.getElementsByClassName('welcomeDisappear')[0].style.display = "none";
+    }, 3000)
+}
